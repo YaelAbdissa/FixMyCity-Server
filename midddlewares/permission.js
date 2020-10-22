@@ -8,8 +8,9 @@ exports.checkHasPermission = (permissions) => (req,res,next) =>{
             if(typeof permissions === 'string'){
                 permissions = [permissions]
             }
+            console.log(req)
             permissions.forEach(permission => {
-                if(!user.data.permissions.includes(permission)){
+                if(!(user.data.permissions.includes(permission))){
                     errors.push(`You dont have ${permission} permission`)
                 }
             });

@@ -4,7 +4,7 @@ exports.viewAllUsers = async (req, res) => {
 
     try {
         const users = await userModel.paginate({});
-        res.json({users})
+        res.json(users)
     } catch (error) {
         
         res.status(400).json({
@@ -49,3 +49,4 @@ exports.updateUser = async (req, res) => {
         })
     }
 }
+

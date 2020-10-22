@@ -4,18 +4,21 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var jwt = require('express-jwt');
-
+var session = require('express-session');
 
 
 const mongoose = require('./config/mongoose');
-const { jwt_key,port } = require('./config/vars');
+const { jwt_key,port,session_key } = require('./config/vars');
 const {routes} = require('./config/routes')
-var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var authRouter = require('./routes/auth');
 var reportRouter = require('./routes/reports');
+var adminRouter = require('./routes/admin');
+var municipalityRouter = require('./routes/municipal');
 
 var app = express();
+
+
 const expressSwagger = require('express-swagger-generator')(app);
 
 let options = {
@@ -31,14 +34,14 @@ let options = {
           "application/json"
       ],
       schemes: ['http', 'https'],
-  // securityDefinitions: {
-  //         JWT: {
-  //             type: 'apiKey',
-  //             in: 'header',
-  //             name: 'Authorization',
-  //             description: "",
-  //         }
-  //     }
+  securityDefinitions: {
+          JWT: {
+              type: 'apiKey',
+              in: 'header',
+              name: 'Authorization',
+              description: "",
+          }
+      }
   },
   basedir: __dirname, //app absolute path
   files: ['./routes/*.js'] //Path to the API handle folder
@@ -46,28 +49,32 @@ let options = {
 
 expressSwagger(options)
 
-mongoose.connect();
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hbs');
+
+
+mongoose.connect();
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static('public'));
+app.use(express.static('public/'));
 
 
 // app.use(jwt({ secret: jwt_key, algorithms: ['HS256']})
 // .unless({path: routes.public}));
 
+app.use(session({
+  secret: session_key,
+  resave: false,
+  saveUninitialized: true
+}))
 
-app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/auth', authRouter);
 app.use('/reports', reportRouter);
-
+app.use('/admin', adminRouter);
+app.use('/municipality', municipalityRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -82,7 +89,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  //res.render('error');
 });
 
 module.exports = app;

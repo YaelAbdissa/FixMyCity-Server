@@ -37,11 +37,10 @@ exports.connect = () => {
       })
       .then(async () => {
         console.log('mongoDB connected...')
-
-        await migration.migratePermissions()
-        await migration.migrateRoles()
-        await migration.migrateUsers()  
-        await migration.migrateMunicipals()
+        await migration.migratePermissions();
+        await migration.migrateRoles();
+        await migration.migrateUsers(); 
+        await migration.migrateMunicipals();
       });
     return mongoose.connection;
   };

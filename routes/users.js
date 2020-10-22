@@ -6,18 +6,39 @@ const userController = require('../controllers/user.controller')
 const { checkHasPermission } = require('../midddlewares/permission');
 
 /**
- * Create a new user 
+ * Get All user s
+ * 
+ * @route GET /users/
+ * @group Admin 
+ * @returns {object} 200 - User objects
+ * @returns {Error}  default - Unexpected error
+ */
+router.get('/', userController.viewAllUsers);
+//checkHasPermission(['view any user']),
+
+/**
+ * Get a user 
  * 
  * @route GET /users/{id}
- * @group User 
+ * @group Admin 
  * @param {string} id.path.required - user id
- * @security JWT
  * @returns {object} 200 - User object
  * @returns {Error}  default - Unexpected error
  */
-router.get('/', checkHasPermission(['view all user']),userController.viewAllUsers);
-router.get('/:id', checkHasPermission(['view user']),userController.viewUser);
-router.get('/:id', checkHasPermission(['update user']),userController.updateUser);
+router.get('/:id', userController.viewUser);
+//checkHasPermission(['view user']),
 
+/**
+ * Update a user 
+ * 
+ * @route PATCH /users/{id}
+ * @group User 
+ * @param {string} id.path.required - user id
+ * @param {USER.model} user.body.required - User body
+ * @returns {object} 200 - User object
+ * @returns {Error}  default - Unexpected error
+ */
+router.patch('/:id', userController.updateUser);
+//checkHasPermission(['update user']),
 
 module.exports = router;

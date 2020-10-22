@@ -16,6 +16,7 @@ let transporter = nodeMailer.createTransport({
 })
 
 
+
 exports.login = async (req, res) => {
    
     try {
@@ -61,20 +62,29 @@ exports.signup = async (req, res) => {
             if(user){
                 throw new Error("User already Exists")
             }
-            const roles = await roleModel.findOne({
-                name: "user"
-            })
-            const newUser = await new userModel({
-                first_name : req.body.first_name,
-                last_name : req.body.last_name,
-                email : req.body.email,
-                password : req.body.password,
-                roles : roles._id,
-            })
+            const token = jwt.sign({data: req.body}, jwt_key, { algorithm: 'HS256' })
+            let mailOption = {
+                from : "fixmycity3@gmail.com",
+                to : req.body.email,
+                subject : " Account Activation Link",
+               html : `
+                    <h2>Please click on given button to activate your account</h2>
+                    <form action="http://localhost:${process.env.PORT}/auth/activate/" method="POST">
+
+                    <input id="title" name="token" type="hidden">
+                    <input type="submit" value="Click Button" />
+                    </form>
+
+                    <a href="http://localhost:${process.env.PORT}/auth/activationLink/${token}">click link</a>
+               `
+            }
+            transporter.sendMail(mailOption , function (err, data) {
+                if(err){
+                    throw new Error("something went wrong")
+                } else {
+                    res.status(200).send("Email sent successfully check your email")
+                }
             
-            await newUser.save()
-            res.status(200).json({
-                newUser
             })
         }
         else{
@@ -90,17 +100,17 @@ exports.signup = async (req, res) => {
     
 }
 exports.activate = async (req, res)=>{
-    // try{
-    //     const token = req.body.token;
-    //     console.log(token)
-    //     if(!token){
-    //         throw new Error("Something went wrong")
-    //     }
+    try{
+        const token = req.body.token;
+        console.log(token)
+        if(!token){
+            throw new Error("Something went wrong")
+        }
         
-    //     jwt.verify(token, jwt_key, { algorithm: 'HS256' }, async (err, decoded)=> {
-    //         if(err){
-    //             throw new Error("Incorrect or expired links")
-    //         }
+        jwt.verify(token, jwt_key, { algorithm: 'HS256' }, async (err, decoded)=> {
+            if(err){
+                throw new Error("Incorrect or expired links")
+            }
             //console.log(decoded.data)
 
             // const roles = await roleModel.findOne({
@@ -120,14 +130,14 @@ exports.activate = async (req, res)=>{
             //     newUser
             // })
 
-    //     });
+        });
         
-    // }catch(err){
-    //     res.status(400).json({
-    //         error: true,
-    //         message: error.message
-    //     })
-    // }
+    }catch(err){
+        res.status(400).json({
+            error: true,
+            message: error.message
+        })
+    }
 }
 
 exports.forgetPassword = async (req, res) => {
@@ -139,17 +149,15 @@ exports.forgetPassword = async (req, res) => {
         if(!user){
             throw new Error("User doesn't exist")
         }
-         var resetCode =  (new Date()).getTime().toString(36) + Math.random().toString(36).slice(2)
-         //var resetCode2 =  ((new Date()).getTime() + Math.floor(Math.random() * 9000))
+        var resetCode = Math.floor(1000 + Math.random() * 9000);
             let mailOption = {
                 from : "fixmycity3@gmail.com",
                 to : req.body.email,
-                subject : " Password Reset Link",
+                subject : " Password Reset Code",
                html : `
-                <h2>Please enter on code below to reset your password</h2>
-                <h2>${resetCode}</h2>
+                    <h2>Please enter on code below to reset your password</h2>
+                    <h2>${resetCode}</h2>
                `
-
             }
             await user.updateOne({reset_link : resetCode});
             transporter.sendMail(mailOption , function (err, data) {
@@ -170,32 +178,53 @@ exports.forgetPassword = async (req, res) => {
     
 }
 
+exports.activationLink = (req,res) =>{
+    const activationLink = req.params.token;
+
+    return res.status(200).json({
+        "activationLink" : activationLink
+    })
+
+}
 exports.resetPassword = async (req, res) => {
     const {resetLink , newPass} = req.body
+    console.log("bub" , resetLink ,newPass)
     try {
         if(resetLink){
-            const user = await userModel.findOne({
-                reset_link: resetLink
-            });
-            if(!user){
-                throw new Error("User doesn't exist ")
-            }
-            
-            user.password = newPass
-            user.reset_link = ""
-            await user.save()
-            return res.status(200).json(user)
+            jwt.verify(resetLink, jwt_key, { algorithm: 'HS256' }, async (err, decoded)=> {
+                if(err){
+                    throw new Error("Incorrect or expired links")
+                }
+                const user = await userModel.findOne({
+                    reset_link: resetLink
+                });
 
+                if(!user){
+                    throw new Error("User with this link doesn't exist ")
+                }
+                user.password = newPass
+                user.reset_link = undefined
+                await user.save()
+                res.status(200).json({
+                    user
+                })
+            })
+            
         }
         else{
             throw new Error("Reset Link can't be null")
         }
+        
+        
+
     } catch (error) {
+        
         res.status(400).json({
             error: true,
             message: error.message
         })
     }
+    
 }
 
 

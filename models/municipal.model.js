@@ -1,5 +1,6 @@
 
 const mongoose = require('mongoose');
+const mongoosePaginate = require('mongoose-paginate-v2');
 const bcrypt = require('bcrypt')
 
 const municipalSchema = new mongoose.Schema({
@@ -58,6 +59,6 @@ municipalSchema.method({
 })
  
 
-
+municipalSchema.plugin(mongoosePaginate);
 
 module.exports = mongoose.model('Municipal', municipalSchema);
