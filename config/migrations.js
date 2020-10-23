@@ -41,14 +41,14 @@ const users = [
         username: 'admin',
         email: 'super@admin.com',
         password: 'superuser',
-        roles: 'admin'
+        roles: ['admin']
     },
     ,
     {
         username : 'user', 
         email : 'user@rmail.com',
         password : 'password',
-        roles : 'user'
+        roles : ['user']
     }
 ]
 
@@ -57,70 +57,70 @@ const municipals = [
         name : "Addis Ketema Sub-city Administration",
         username : "addis_ketema",
         password : "addis_ketema",
-        roles : 'municipal',
+        roles : ['municipal']
 
     },
     { 
         name : "Akaky Kaliti Sub-city Administration",
         username : "akaki_kalit",
         password : "akaki_kalit",
-        roles : 'municipal',
+        roles : ['municipal']
         
     },
     { 
         name : "Arada Sub-City Administration ",
         username : "arada123",
         password : "arada123",
-        roles : 'municipal',
+        roles : ['municipal']
         
     },
     { 
         name : "Bole Sub City Administration",
         username : "bolebole12",
         password : "bolebole12",
-        roles : 'municipal',
+        roles : ['municipal']
         
     },
     { 
         name : "Gullele Sub City Administration",
         username : "gullele123",
         password : "gullele123",
-        roles : 'municipal',
+        roles : ['municipal']
         
     },
     { 
         name : "Kirkos Sub City Administration",
         username : "kirkos123",
         password : "kirkos123",
-        roles : 'municipal',
+        roles : ['municipal']
         
     },
     { 
         name : "Kolfe Keranio Sub City Administration",
         username : "kolfe_keranio",
         password : "kolfe_keranio",
-        roles : 'municipal',
+        roles : ['municipal']
         
     },
     { 
         name : "Lideta Sub City Administration",
         username : "lidet123",
         password : "lidet123",
-        roles : 'municipal',
+        roles : ['municipal']
         
     },
     { 
         name : "Nifas Silk_lafto Sub City Administration",
         username : "nefas_silk",
         password : "nefas_silk",
-        roles : 'municipal',
+        roles : ['municipal']
         
     },
     { 
         name : "Yeka Sub City Administration",
         username : "yekayeka12",
         password : "yekayeka12",
-        roles : 'municipal',
+        roles : ['municipal']
          
     }
 ]

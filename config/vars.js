@@ -7,10 +7,10 @@ require('dotenv-safe').config({
 });
 
 module.exports = {
-    env: process.env.NODE_ENV,
-    port: process.env.PORT,
+    env: "development",
+    port: 1000,
     mongo: {
-      uri: process.env.NODE_ENV === 'test' ? process.env.MONGO_URI_TESTS : process.env.MONGO_URI,
+      uri: "mongodb://mongo:27017/FixMyCityT",
     },
     logs: process.env.NODE_ENV === 'production' ? 'combined' : 'dev',
     jwt_key: 'sampleRandomKey',

@@ -73,9 +73,9 @@ exports.signup = async (req, res) => {
             })
             
             await newUser.save()
-            res.status(200).json({
+            res.status(200).json(
                 newUser
-            })
+            )
         }
         else{
             throw new Error("email does not exists")
