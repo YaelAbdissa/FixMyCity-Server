@@ -8,9 +8,9 @@ require('dotenv-safe').config({
 
 module.exports = {
     env: "development",
-    port: 1000,
+    port: 2000,
     mongo: {
-      uri: "mongodb://mongo:27017/FixMyCityT",
+      uri: "mongodb://localhost:27017/FixMyCityT",
     },
     logs: process.env.NODE_ENV === 'production' ? 'combined' : 'dev',
     jwt_key: 'sampleRandomKey',

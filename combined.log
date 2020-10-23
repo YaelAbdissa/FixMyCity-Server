@@ -1,0 +1,1427 @@
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"completed user user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed bolebole12 user migrated...","level":"info"}
+{"message":"completed kirkos123 user migrated...","level":"info"}
+{"message":"completed gullele123 user migrated...","level":"info"}
+{"message":"completed akaki_kalit user migrated...","level":"info"}
+{"message":"completed addis_ketema user migrated...","level":"info"}
+{"message":"completed arada123 user migrated...","level":"info"}
+{"message":"completed kolfe_keranio user migrated...","level":"info"}
+{"message":"completed lidet123 user migrated...","level":"info"}
+{"message":"completed yekayeka12 user migrated...","level":"info"}
+{"message":"completed nefas_silk user migrated...","level":"info"}
+{"message":"completed user user migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed akaki_kalit user migrated...","level":"info"}
+{"message":"completed addis_ketema user migrated...","level":"info"}
+{"message":"completed arada123 user migrated...","level":"info"}
+{"message":"completed bolebole12 user migrated...","level":"info"}
+{"message":"completed kolfe_keranio user migrated...","level":"info"}
+{"message":"completed kirkos123 user migrated...","level":"info"}
+{"message":"completed gullele123 user migrated...","level":"info"}
+{"message":"completed lidet123 user migrated...","level":"info"}
+{"message":"completed nefas_silk user migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"completed yekayeka12 user migrated...","level":"info"}
+{"message":"completed user user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed addis_ketema user migrated...","level":"info"}
+{"message":"completed bolebole12 user migrated...","level":"info"}
+{"message":"completed arada123 user migrated...","level":"info"}
+{"message":"completed akaki_kalit user migrated...","level":"info"}
+{"message":"completed kirkos123 user migrated...","level":"info"}
+{"message":"completed gullele123 user migrated...","level":"info"}
+{"message":"completed kolfe_keranio user migrated...","level":"info"}
+{"message":"completed lidet123 user migrated...","level":"info"}
+{"message":"completed nefas_silk user migrated...","level":"info"}
+{"message":"completed yekayeka12 user migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"completed user user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed kirkos123 user migrated...","level":"info"}
+{"message":"completed gullele123 user migrated...","level":"info"}
+{"message":"completed bolebole12 user migrated...","level":"info"}
+{"message":"completed arada123 user migrated...","level":"info"}
+{"message":"completed addis_ketema user migrated...","level":"info"}
+{"message":"completed akaki_kalit user migrated...","level":"info"}
+{"message":"completed kolfe_keranio user migrated...","level":"info"}
+{"message":"completed lidet123 user migrated...","level":"info"}
+{"message":"completed nefas_silk user migrated...","level":"info"}
+{"message":"completed yekayeka12 user migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"completed user user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed bolebole12 user migrated...","level":"info"}
+{"message":"completed addis_ketema user migrated...","level":"info"}
+{"message":"completed akaki_kalit user migrated...","level":"info"}
+{"message":"completed arada123 user migrated...","level":"info"}
+{"message":"completed kirkos123 user migrated...","level":"info"}
+{"message":"completed gullele123 user migrated...","level":"info"}
+{"message":"completed kolfe_keranio user migrated...","level":"info"}
+{"message":"completed lidet123 user migrated...","level":"info"}
+{"message":"completed yekayeka12 user migrated...","level":"info"}
+{"message":"completed nefas_silk user migrated...","level":"info"}
+{"message":"completed user user migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed bolebole12 user migrated...","level":"info"}
+{"message":"completed addis_ketema user migrated...","level":"info"}
+{"message":"completed arada123 user migrated...","level":"info"}
+{"message":"completed akaki_kalit user migrated...","level":"info"}
+{"message":"completed kolfe_keranio user migrated...","level":"info"}
+{"message":"completed gullele123 user migrated...","level":"info"}
+{"message":"completed kirkos123 user migrated...","level":"info"}
+{"message":"completed lidet123 user migrated...","level":"info"}
+{"message":"completed yekayeka12 user migrated...","level":"info"}
+{"message":"completed nefas_silk user migrated...","level":"info"}
+{"message":"completed user user migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed addis_ketema user migrated...","level":"info"}
+{"message":"completed akaki_kalit user migrated...","level":"info"}
+{"message":"completed bolebole12 user migrated...","level":"info"}
+{"message":"completed arada123 user migrated...","level":"info"}
+{"message":"completed kirkos123 user migrated...","level":"info"}
+{"message":"completed gullele123 user migrated...","level":"info"}
+{"message":"completed kolfe_keranio user migrated...","level":"info"}
+{"message":"completed lidet123 user migrated...","level":"info"}
+{"message":"completed nefas_silk user migrated...","level":"info"}
+{"message":"completed yekayeka12 user migrated...","level":"info"}
+{"message":"completed user user migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed akaki_kalit user migrated...","level":"info"}
+{"message":"completed arada123 user migrated...","level":"info"}
+{"message":"completed addis_ketema user migrated...","level":"info"}
+{"message":"completed bolebole12 user migrated...","level":"info"}
+{"message":"completed gullele123 user migrated...","level":"info"}
+{"message":"completed lidet123 user migrated...","level":"info"}
+{"message":"completed kirkos123 user migrated...","level":"info"}
+{"message":"completed kolfe_keranio user migrated...","level":"info"}
+{"message":"completed nefas_silk user migrated...","level":"info"}
+{"message":"completed yekayeka12 user migrated...","level":"info"}
+{"message":"completed user user migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed bolebole12 user migrated...","level":"info"}
+{"message":"completed arada123 user migrated...","level":"info"}
+{"message":"completed addis_ketema user migrated...","level":"info"}
+{"message":"completed akaki_kalit user migrated...","level":"info"}
+{"message":"completed gullele123 user migrated...","level":"info"}
+{"message":"completed kirkos123 user migrated...","level":"info"}
+{"message":"completed lidet123 user migrated...","level":"info"}
+{"message":"completed kolfe_keranio user migrated...","level":"info"}
+{"message":"completed nefas_silk user migrated...","level":"info"}
+{"message":"completed yekayeka12 user migrated...","level":"info"}
+{"message":"completed user user migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed addis_ketema user migrated...","level":"info"}
+{"message":"completed akaki_kalit user migrated...","level":"info"}
+{"message":"completed arada123 user migrated...","level":"info"}
+{"message":"completed bolebole12 user migrated...","level":"info"}
+{"message":"completed kirkos123 user migrated...","level":"info"}
+{"message":"completed gullele123 user migrated...","level":"info"}
+{"message":"completed kolfe_keranio user migrated...","level":"info"}
+{"message":"completed lidet123 user migrated...","level":"info"}
+{"message":"completed nefas_silk user migrated...","level":"info"}
+{"message":"completed yekayeka12 user migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"completed user user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"completed user user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"completed user user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"completed bolebole12 user migrated...","level":"info"}
+{"message":"completed arada123 user migrated...","level":"info"}
+{"message":"completed akaki_kalit user migrated...","level":"info"}
+{"message":"completed addis_ketema user migrated...","level":"info"}
+{"message":"completed gullele123 user migrated...","level":"info"}
+{"message":"completed kolfe_keranio user migrated...","level":"info"}
+{"message":"completed lidet123 user migrated...","level":"info"}
+{"message":"completed kirkos123 user migrated...","level":"info"}
+{"message":"completed nefas_silk user migrated...","level":"info"}
+{"message":"completed yekayeka12 user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed user user migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"completed bolebole12 user migrated...","level":"info"}
+{"message":"completed akaki_kalit user migrated...","level":"info"}
+{"message":"completed addis_ketema user migrated...","level":"info"}
+{"message":"completed arada123 user migrated...","level":"info"}
+{"message":"completed kirkos123 user migrated...","level":"info"}
+{"message":"completed gullele123 user migrated...","level":"info"}
+{"message":"completed kolfe_keranio user migrated...","level":"info"}
+{"message":"completed lidet123 user migrated...","level":"info"}
+{"message":"completed nefas_silk user migrated...","level":"info"}
+{"message":"completed yekayeka12 user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"completed user user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed user user migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"completed bolebole12 user migrated...","level":"info"}
+{"message":"completed arada123 user migrated...","level":"info"}
+{"message":"completed akaki_kalit user migrated...","level":"info"}
+{"message":"completed addis_ketema user migrated...","level":"info"}
+{"message":"completed gullele123 user migrated...","level":"info"}
+{"message":"completed kirkos123 user migrated...","level":"info"}
+{"message":"completed kolfe_keranio user migrated...","level":"info"}
+{"message":"completed lidet123 user migrated...","level":"info"}
+{"message":"completed nefas_silk user migrated...","level":"info"}
+{"message":"completed yekayeka12 user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"completed user user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"completed akaki_kalit user migrated...","level":"info"}
+{"message":"completed addis_ketema user migrated...","level":"info"}
+{"message":"completed bolebole12 user migrated...","level":"info"}
+{"message":"completed arada123 user migrated...","level":"info"}
+{"message":"completed gullele123 user migrated...","level":"info"}
+{"message":"completed kirkos123 user migrated...","level":"info"}
+{"message":"completed lidet123 user migrated...","level":"info"}
+{"message":"completed kolfe_keranio user migrated...","level":"info"}
+{"message":"completed nefas_silk user migrated...","level":"info"}
+{"message":"completed yekayeka12 user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"completed user user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"completed user user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed user user migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"completed akaki_kalit user migrated...","level":"info"}
+{"message":"completed bolebole12 user migrated...","level":"info"}
+{"message":"completed addis_ketema user migrated...","level":"info"}
+{"message":"completed arada123 user migrated...","level":"info"}
+{"message":"completed gullele123 user migrated...","level":"info"}
+{"message":"completed kirkos123 user migrated...","level":"info"}
+{"message":"completed kolfe_keranio user migrated...","level":"info"}
+{"message":"completed lidet123 user migrated...","level":"info"}
+{"message":"completed nefas_silk user migrated...","level":"info"}
+{"message":"completed yekayeka12 user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"completed addis_ketema user migrated...","level":"info"}
+{"message":"completed lidet123 user migrated...","level":"info"}
+{"message":"completed akaki_kalit user migrated...","level":"info"}
+{"message":"completed arada123 user migrated...","level":"info"}
+{"message":"completed bolebole12 user migrated...","level":"info"}
+{"message":"completed kirkos123 user migrated...","level":"info"}
+{"message":"completed gullele123 user migrated...","level":"info"}
+{"message":"completed kolfe_keranio user migrated...","level":"info"}
+{"message":"completed nefas_silk user migrated...","level":"info"}
+{"message":"completed yekayeka12 user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"completed addis_ketema municipal migrated...","level":"info"}
+{"message":"completed bolebole12 municipal migrated...","level":"info"}
+{"message":"completed arada123 municipal migrated...","level":"info"}
+{"message":"completed akaki_kalit municipal migrated...","level":"info"}
+{"message":"completed kirkos123 municipal migrated...","level":"info"}
+{"message":"completed gullele123 municipal migrated...","level":"info"}
+{"message":"completed kolfe_keranio municipal migrated...","level":"info"}
+{"message":"completed lidet123 municipal migrated...","level":"info"}
+{"message":"completed nefas_silk municipal migrated...","level":"info"}
+{"message":"completed yekayeka12 municipal migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"completed akaki_kalit municipal migrated...","level":"info"}
+{"message":"completed bolebole12 municipal migrated...","level":"info"}
+{"message":"completed arada123 municipal migrated...","level":"info"}
+{"message":"completed addis_ketema municipal migrated...","level":"info"}
+{"message":"completed lidet123 municipal migrated...","level":"info"}
+{"message":"completed gullele123 municipal migrated...","level":"info"}
+{"message":"completed kirkos123 municipal migrated...","level":"info"}
+{"message":"completed kolfe_keranio municipal migrated...","level":"info"}
+{"message":"completed yekayeka12 municipal migrated...","level":"info"}
+{"message":"completed nefas_silk municipal migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed bolebole12 municipal migrated...","level":"info"}
+{"message":"completed akaki_kalit municipal migrated...","level":"info"}
+{"message":"completed arada123 municipal migrated...","level":"info"}
+{"message":"completed addis_ketema municipal migrated...","level":"info"}
+{"message":"completed kirkos123 municipal migrated...","level":"info"}
+{"message":"completed gullele123 municipal migrated...","level":"info"}
+{"message":"completed kolfe_keranio municipal migrated...","level":"info"}
+{"message":"completed lidet123 municipal migrated...","level":"info"}
+{"message":"completed nefas_silk municipal migrated...","level":"info"}
+{"message":"completed yekayeka12 municipal migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed bolebole12 municipal migrated...","level":"info"}
+{"message":"completed akaki_kalit municipal migrated...","level":"info"}
+{"message":"completed arada123 municipal migrated...","level":"info"}
+{"message":"completed addis_ketema municipal migrated...","level":"info"}
+{"message":"completed gullele123 municipal migrated...","level":"info"}
+{"message":"completed lidet123 municipal migrated...","level":"info"}
+{"message":"completed kirkos123 municipal migrated...","level":"info"}
+{"message":"completed kolfe_keranio municipal migrated...","level":"info"}
+{"message":"completed nefas_silk municipal migrated...","level":"info"}
+{"message":"completed yekayeka12 municipal migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed addis_ketema municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed akaki_kalit municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed arada123 municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed bolebole12 municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed gullele123 municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed kirkos123 municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed kolfe_keranio municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed lidet123 municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed nefas_silk municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed yekayeka12 municipal migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed arada123 municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed akaki_kalit municipal migrated...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed addis_ketema municipal migrated...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed bolebole12 municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed kolfe_keranio municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed kirkos123 municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed lidet123 municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed gullele123 municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed nefas_silk municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed yekayeka12 municipal migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"data n undefined ","level":"info"}
+{"message":"completed addis_ketema municipal migrated...","level":"info"}
+{"message":"data n undefined ","level":"info"}
+{"message":"completed akaki_kalit municipal migrated...","level":"info"}
+{"message":"data n undefined ","level":"info"}
+{"message":"completed arada123 municipal migrated...","level":"info"}
+{"message":"data n undefined ","level":"info"}
+{"message":"completed bolebole12 municipal migrated...","level":"info"}
+{"message":"data n undefined ","level":"info"}
+{"message":"completed gullele123 municipal migrated...","level":"info"}
+{"message":"data n undefined ","level":"info"}
+{"message":"completed kirkos123 municipal migrated...","level":"info"}
+{"message":"data n undefined ","level":"info"}
+{"message":"completed kolfe_keranio municipal migrated...","level":"info"}
+{"message":"data n undefined ","level":"info"}
+{"message":"completed lidet123 municipal migrated...","level":"info"}
+{"message":"data n undefined ","level":"info"}
+{"message":"completed nefas_silk municipal migrated...","level":"info"}
+{"message":"data n undefined ","level":"info"}
+{"message":"completed yekayeka12 municipal migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed addis_ketema municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed akaki_kalit municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed arada123 municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed bolebole12 municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed gullele123 municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed kirkos123 municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed kolfe_keranio municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed lidet123 municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed nefas_silk municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed yekayeka12 municipal migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed addis_ketema municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed akaki_kalit municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed arada123 municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed bolebole12 municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed gullele123 municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed kirkos123 municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed kolfe_keranio municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed lidet123 municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed nefas_silk municipal migrated...","level":"info"}
+{"message":"data n  ","level":"info"}
+{"message":"completed yekayeka12 municipal migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"completed akaki_kalit municipal migrated...","level":"info"}
+{"message":"completed bolebole12 municipal migrated...","level":"info"}
+{"message":"completed arada123 municipal migrated...","level":"info"}
+{"message":"completed addis_ketema municipal migrated...","level":"info"}
+{"message":"completed gullele123 municipal migrated...","level":"info"}
+{"message":"completed kolfe_keranio municipal migrated...","level":"info"}
+{"message":"completed kirkos123 municipal migrated...","level":"info"}
+{"message":"completed lidet123 municipal migrated...","level":"info"}
+{"message":"completed nefas_silk municipal migrated...","level":"info"}
+{"message":"completed yekayeka12 municipal migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed bolebole12 municipal migrated...","level":"info"}
+{"message":"completed akaki_kalit municipal migrated...","level":"info"}
+{"message":"completed arada123 municipal migrated...","level":"info"}
+{"message":"completed addis_ketema municipal migrated...","level":"info"}
+{"message":"completed gullele123 municipal migrated...","level":"info"}
+{"message":"completed kirkos123 municipal migrated...","level":"info"}
+{"message":"completed lidet123 municipal migrated...","level":"info"}
+{"message":"completed kolfe_keranio municipal migrated...","level":"info"}
+{"message":"completed nefas_silk municipal migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed yekayeka12 municipal migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed akaki_kalit municipal migrated...","level":"info"}
+{"message":"completed addis_ketema municipal migrated...","level":"info"}
+{"message":"completed bolebole12 municipal migrated...","level":"info"}
+{"message":"completed arada123 municipal migrated...","level":"info"}
+{"message":"completed kirkos123 municipal migrated...","level":"info"}
+{"message":"completed gullele123 municipal migrated...","level":"info"}
+{"message":"completed lidet123 municipal migrated...","level":"info"}
+{"message":"completed kolfe_keranio municipal migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed nefas_silk municipal migrated...","level":"info"}
+{"message":"completed yekayeka12 municipal migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed gullele123 municipal migrated...","level":"info"}
+{"message":"completed kirkos123 municipal migrated...","level":"info"}
+{"message":"completed lidet123 municipal migrated...","level":"info"}
+{"message":"completed arada123 municipal migrated...","level":"info"}
+{"message":"completed bolebole12 municipal migrated...","level":"info"}
+{"message":"completed addis_ketema municipal migrated...","level":"info"}
+{"message":"completed akaki_kalit municipal migrated...","level":"info"}
+{"message":"completed kolfe_keranio municipal migrated...","level":"info"}
+{"message":"completed nefas_silk municipal migrated...","level":"info"}
+{"message":"completed yekayeka12 municipal migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"completed bolebole12 municipal migrated...","level":"info"}
+{"message":"completed arada123 municipal migrated...","level":"info"}
+{"message":"completed addis_ketema municipal migrated...","level":"info"}
+{"message":"completed kirkos123 municipal migrated...","level":"info"}
+{"message":"completed akaki_kalit municipal migrated...","level":"info"}
+{"message":"completed gullele123 municipal migrated...","level":"info"}
+{"message":"completed kolfe_keranio municipal migrated...","level":"info"}
+{"message":"completed lidet123 municipal migrated...","level":"info"}
+{"message":"completed nefas_silk municipal migrated...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed yekayeka12 municipal migrated...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed akaki_kalit municipal migrated...","level":"info"}
+{"message":"completed bolebole12 municipal migrated...","level":"info"}
+{"message":"completed arada123 municipal migrated...","level":"info"}
+{"message":"completed addis_ketema municipal migrated...","level":"info"}
+{"message":"completed gullele123 municipal migrated...","level":"info"}
+{"message":"completed kirkos123 municipal migrated...","level":"info"}
+{"message":"completed kolfe_keranio municipal migrated...","level":"info"}
+{"message":"completed lidet123 municipal migrated...","level":"info"}
+{"message":"completed nefas_silk municipal migrated...","level":"info"}
+{"message":"completed yekayeka12 municipal migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed arada123 municipal migrated...","level":"info"}
+{"message":"completed addis_ketema municipal migrated...","level":"info"}
+{"message":"completed akaki_kalit municipal migrated...","level":"info"}
+{"message":"completed bolebole12 municipal migrated...","level":"info"}
+{"message":"completed gullele123 municipal migrated...","level":"info"}
+{"message":"completed kirkos123 municipal migrated...","level":"info"}
+{"message":"completed kolfe_keranio municipal migrated...","level":"info"}
+{"message":"completed lidet123 municipal migrated...","level":"info"}
+{"message":"completed nefas_silk municipal migrated...","level":"info"}
+{"message":"completed yekayeka12 municipal migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Found new permissions...","level":"info"}
+{"message":"migrate permission completed ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"Found new role...","level":"info"}
+{"message":"completed admin role migrated...","level":"info"}
+{"message":"completed user role migrated...","level":"info"}
+{"message":"completed municipal role migrated...","level":"info"}
+{"message":"completed admin user migrated...","level":"info"}
+{"message":"Checking permissions migrations...","level":"info"}
+{"message":"Noting to migrate fro permission ...","level":"info"}
+{"message":"Checking role migrations...","level":"info"}
+{"message":"completed roles migrations...","level":"info"}
+{"message":"Checking municipals migrations...","level":"info"}
+{"message":"completed municipals migrations...","level":"info"}
+{"message":"Checking users migrations...","level":"info"}
+{"message":"completed users migrations...","level":"info"}
+{"message":"completed bolebole12 municipal migrated...","level":"info"}
+{"message":"completed arada123 municipal migrated...","level":"info"}
+{"message":"completed addis_ketema municipal migrated...","level":"info"}
+{"message":"completed akaki_kalit municipal migrated...","level":"info"}
+{"message":"completed gullele123 municipal migrated...","level":"info"}
+{"message":"completed kirkos123 municipal migrated...","level":"info"}
+{"message":"completed kolfe_keranio municipal migrated...","level":"info"}
+{"message":"completed lidet123 municipal migrated...","level":"info"}
+{"message":"completed nefas_silk municipal migrated...","level":"info"}
+{"message":"completed yekayeka12 municipal migrated...","level":"info"}

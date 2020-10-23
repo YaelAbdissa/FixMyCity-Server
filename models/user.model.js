@@ -13,7 +13,7 @@ const userSchema = new mongoose.Schema({
     active: { type: Boolean, default: true },
     push_token: { type: String, default: '' },
     reset_link: { type: String, default: '' },
-    roles: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Roles' }],
+    roles: [{ type: mongoose.Schema.Types.ObjectId, required :true,ref: 'Roles' }],
     permissions: [{ type: String }],
     
 })

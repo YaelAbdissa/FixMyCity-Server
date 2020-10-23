@@ -28,7 +28,8 @@
     "morgan": "~1.9.1",
     "multer": "^1.4.2",
     "nodemailer": "^6.4.12",
-    "swagger-ui-express": "^4.1.4"
+    "swagger-ui-express": "^4.1.4",
+    "winston": "^3.3.3"
   },
   "devDependencies": {
     "express-swagger-generator": "^1.1.17",
