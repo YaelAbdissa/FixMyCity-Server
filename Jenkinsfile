@@ -1,8 +1,8 @@
 pipeline {
   environment {
     PROJECT = "trainee-2020-6-omegameseret"
-    APP_NAME = "movies-api"
-    NAMESPACE = "moviez-api"
+    APP_NAME = "fixmycity-api"
+    NAMESPACE = "fixmycity"
     IMAGE_TAG = "gcr.io/${PROJECT}/${APP_NAME}:${env.BRANCH_NAME}.${BUILD_NUMBER}"
   }
     agent {
