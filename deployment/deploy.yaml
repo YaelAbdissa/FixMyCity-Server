@@ -1,7 +1,7 @@
 kind: Deployment
 apiVersion: extensions/v1beta1
 metadata:
-  name: moviez-api
+  name: fixmycity-api
 spec:
   selector:
     matchLabels:
@@ -10,14 +10,14 @@ spec:
   replicas: 1
   template:
     metadata:
-      name: moviez-api-deployment
+      name: fixmycity-api-deployment
       labels:
         app: nodejs
         role: backend
         env: develop
     spec:
       containers:
-      - name: moviez-api
+      - name: fixmycity-api
         image: gcr.io/gcr-project/sample:1.0.0
         env:
           - name: MONGO_URI_TESTS
