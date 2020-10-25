@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+  name: fixmycity-api-ingress
+spec:
+  rules:
+  - host: fixmycity-api.apps.et6om.gebeya.co
+    http:
+      paths:
+      - backend:
+          serviceName: fixmycity-api-service
+          servicePort: 1000
+        path: /
