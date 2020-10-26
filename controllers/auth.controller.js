@@ -53,8 +53,8 @@ exports.login = async (req, res) => {
 exports.signup = async (req, res) => {
 
     try {
-        const isValid =await emailCheck(req.body.email)
-        if(isValid){
+        // const isValid =await emailCheck(req.body.email)
+        // if(isValid){
             const user = await userModel.findOne({
                 email: req.body.email
             })
@@ -76,10 +76,10 @@ exports.signup = async (req, res) => {
             res.status(200).json(
                 newUser
             )
-        }
-        else{
-            throw new Error("email does not exists")
-        }
+        // }
+        // else{
+        //     throw new Error("email does not exists")
+        // }
     } catch (error) {
         
         res.status(400).json({

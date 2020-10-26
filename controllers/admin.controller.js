@@ -10,7 +10,9 @@ exports.login = async (req, res, next) => {
         email: req.body.email
       }).populate({ path: 'roles', populate: {path: 'permissions'} });
       if(user && user.verifyPassword(req.body.password)){
+          console.log(user)
           if(user._doc.roles[0].name == "admin" ){
+            
             let permissions =  user._doc.roles.reduce((prev, next) => {
                 return [...prev, ...next.permissions.map(permission => permission.name)]
             },[])
@@ -22,6 +24,8 @@ exports.login = async (req, res, next) => {
                 token: jwt.sign({data: user._doc}, jwt_key, { algorithm: 'HS256' })
              });
         }
+
+        
     
         return res.status(401).json({
             error: false,

@@ -16,6 +16,7 @@ const { checkHasPermission } = require('../midddlewares/permission');
 router.get('/', userController.viewAllUsers);
 //checkHasPermission(['view any user']),
 
+router.get('/myProfile', userController.viewUserProfile);
 /**
  * Get a user 
  * 
@@ -25,7 +26,7 @@ router.get('/', userController.viewAllUsers);
  * @returns {object} 200 - User object
  * @returns {Error}  default - Unexpected error
  */
-router.get('/:id', userController.viewUser);
+router.get('/:id',checkHasPermission(['view user']), userController.viewUser);
 //checkHasPermission(['view user']),
 
 /**
@@ -38,7 +39,11 @@ router.get('/:id', userController.viewUser);
  * @returns {object} 200 - User object
  * @returns {Error}  default - Unexpected error
  */
-router.patch('/:id', userController.updateUser);
-//checkHasPermission(['update user']),
+router.patch('/', userController.updateUser);
+//checkHasPermission(['update user']),  
+
+router.delete('/:id', userController.removeUser);
+
+
 
 module.exports = router;

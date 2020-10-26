@@ -34,7 +34,7 @@ let options = {
           "application/json"
       ],
       schemes: ['http', 'https'],
-  securityDefinitions: {
+      securityDefinitions: {
           JWT: {
               type: 'apiKey',
               in: 'header',
@@ -61,8 +61,8 @@ app.use(cookieParser());
 app.use(express.static('public/'));
 
 
-// app.use(jwt({ secret: jwt_key, algorithms: ['HS256']})
-// .unless({path: routes.public}));
+app.use(jwt({ secret: jwt_key, algorithms: ['HS256']})
+.unless({path: routes.public}));
 
 app.use(session({
   secret: session_key,

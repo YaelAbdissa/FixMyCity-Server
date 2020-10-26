@@ -18,6 +18,10 @@ const { checkHasPermission } = require('../midddlewares/permission');
  * @returns {Error}  default - Unexpected error
  */
 router.get('/',municipalController.getAllMunicipality);
+
+router.get('/myProfile', municipalController.viewMunicipalityProfile);
+
+router.get('/:id',municipalController.getMunicipalityById);
 //checkHasPermission(['view any municipal']),
 
 /**

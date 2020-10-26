@@ -12,10 +12,12 @@ exports.getAllMunicipality = async(req,res) =>{
 exports.getMunicipalityById = async(req,res) =>{
     try {
         const municipal =  await municipalityModel.findById(req.params.id)
-        if(municipal.length != 0){
+        if(municipal != null){
             res.status(200).json(municipal)
         }
-        throw new Error("municipality not found")
+        res.status(200).json({
+            message: "municipality not found"
+        })
     } catch (error) {
         res.status(400).json({
             error: true,
@@ -90,12 +92,10 @@ exports.remove = async (req, res) => {
                 _id: municipal._id
             })
             return res.status(200).json({
-                error:false,
                 message: "Successfully deleted"
             })
         }
         res.status(200).json({
-            error: false,
             message: 'municipal doesn\t exist',
     
         })
@@ -127,4 +127,23 @@ exports.update = async (req, res) => {
     
         })
     }
+}
+
+exports.viewMunicipalityProfile = async(req,res) =>{
+    try {
+
+        const municipal =  await municipalityModel.findById(req.user.data._id)
+        if(municipal != null){
+            res.status(200).json(municipal)
+        }
+        res.status(200).json({
+            message: "municipality not found"
+        })
+    } catch (error) {
+        res.status(400).json({
+            error: true,
+            message: error.message
+        })
+    }
+    
 }
