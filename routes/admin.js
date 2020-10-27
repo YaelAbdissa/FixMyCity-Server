@@ -13,7 +13,7 @@ const adminController = require("../controllers/admin.controller")
  * Admin Login
  * 
  * @route POST /admin/login
- * @group Admin 
+ * @group Auth 
  * @param {UserL.model} admin.body.required - admin Login
  * @returns message says logout
  * @returns {Error}  default - Something went Wrong

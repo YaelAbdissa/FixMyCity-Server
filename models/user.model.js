@@ -12,6 +12,7 @@ const userSchema = new mongoose.Schema({
     active: { type: Boolean, default: true },
     push_token: { type: String, default: '' },
     reset_link: { type: String, default: '' },
+    isAdmin : {type : Boolean ,default :false},
     roles: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Roles' }],
     permissions: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Permissions' }],
   },

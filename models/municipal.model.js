@@ -7,8 +7,7 @@ const municipalSchema = new mongoose.Schema({
     username: { type: String, default: '' },
     name: { type: String, default: '' },
     password: { type: String, required: true, minlength: 8, maxlength: 128},
-    role: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Roles' }],
-    permissions: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Permissions' }],
+    isMunicipal : { type : Boolean, default:true},
 })
 
 

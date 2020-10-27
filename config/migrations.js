@@ -50,61 +50,52 @@ const municipals = [
         name : "Addis Ketema Sub-city Administration",
         username : "addis_ketema",
         password : "addis_ketema",
-
     },
     { 
         name : "Akaky Kaliti Sub-city Administration",
         username : "akaki_kalit",
         password : "akaki_kalit",
-        
     },
     { 
         name : "Arada Sub-City Administration ",
         username : "arada123",
         password : "arada123",
-        
     },
     { 
         name : "Bole Sub City Administration",
         username : "bolebole12",
         password : "bolebole12",
-        
     },
     { 
         name : "Gullele Sub City Administration",
         username : "gullele123",
         password : "gullele123",
-        
     },
     { 
         name : "Kirkos Sub City Administration",
         username : "kirkos123",
         password : "kirkos123",
-        
     },
     { 
         name : "Kolfe Keranio Sub City Administration",
         username : "kolfe_keranio",
         password : "kolfe_keranio",
-        
     },
     { 
         name : "Lideta Sub City Administration",
         username : "lidet123",
         password : "lidet123",
-        
     },
     { 
         name : "Nifas Silk_lafto Sub City Administration",
         username : "nefas_silk",
         password : "nefas_silk",
-        
     },
     { 
         name : "Yeka Sub City Administration",
         username : "yekayeka12",
         password : "yekayeka12",
-         
+
     }
 ]
 

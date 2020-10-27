@@ -40,7 +40,7 @@ exports.connect = () => {
         
         await migration.migratePermissions();
         await migration.migrateRoles();
-        // await migration.migrateMunicipals();
+        await migration.migrateMunicipals();
         await migration.migrateUsers(); 
         
       });

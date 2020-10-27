@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 var authController = require('../controllers/auth.controller');
-const { validatRequest } =require('../midddlewares/auth')
+const { validatRequest } =require('../midddlewares/validation/auth')
 
 /**
  * @typedef USER
@@ -22,7 +22,7 @@ const { validatRequest } =require('../midddlewares/auth')
  * Login
  * 
  * @route POST /auth/login 
- * @group User 
+ * @group Auth 
  * @param {UserL.model} user.body.required - User Login 
  * @returns {object} 200 - User object
  * @returns {Error}  default - Unexpected error
@@ -33,7 +33,7 @@ router.post('/login', validatRequest('loginUser'), authController.login);
  * Signup
  * 
  * @route POST /auth/signup
- * @group User 
+ * @group Auth 
  * @param {USER.model} user.body.required - User Sign UP
  * @returns {object} 200 - User object
  * @returns {Error}  default - Unexpected error
@@ -44,7 +44,7 @@ router.post('/signup', validatRequest('createUser'),authController.signup);
  * Logout
  * 
  * @route POST /auth/logout
- * @group User 
+ * @group Auth 
  * @returns 200 - message says logout
  * @returns {Error}  default - Something went Wrong
  */
@@ -54,7 +54,7 @@ router.post('/logout', authController.logout);
  * Forgot Password
  * 
  * @route POST /auth/forget-password
- * @group User 
+ * @group Auth 
  * @param {USER.model} user.body.required - you must provide only an email
  * @returns {object} 200 - a message says resent link is sent 
  * @returns {Error}  default - Unexpected error
@@ -65,7 +65,7 @@ router.post('/forget-password',validatRequest('forgetPassword'), authController.
  * Reset Password
  * 
  * @route PUT /auth/reset-password
- * @group User 
+ * @group Auth 
  * @param {ResetPass.model} reset_pass.body.required - Reset Password
  * @returns {object} 200 - a message 
  * @returns {Error}  default - Unexpected error

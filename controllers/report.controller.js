@@ -70,7 +70,7 @@ exports.viewReportById = async (req,res)=>{
 exports.viewMyReport = async (req,res)=>{
     try {
         const reports =  await reportModel.find({
-            reported_by: mongoose.Types.ObjectId(req.params.id)
+            reported_by: mongoose.Types.ObjectId(req.user.data._id)
         })
         if(reports){
             return res.status(200).json(reports)
@@ -153,4 +153,29 @@ exports.forMunicipal = async (req,res)=>{
     }
     
 
+}
+
+exports.removeReport = async (req, res) => {
+    try {
+        let report = await reportModel.findById(req.params.id)
+        if(report) {
+            await reportModel.remove({
+                _id: report._id
+            })
+            return res.status(200).json({
+                message: "Successfully deleted"
+            })
+        }
+        res.status(200).json({
+            message: 'municreportipal doesn\t exist',
+    
+        })
+
+    } catch (error) {
+        res.status(400).json({
+            error: true,
+            message: err.message,
+    
+        })
+    }
 }
