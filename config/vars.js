@@ -1,18 +1,13 @@
 const path = require('path');
 
-// import .env variables
-require('dotenv-safe').config({
-  path: path.join(__dirname, '../.env'),
-  sample: path.join(__dirname, '../.env.example'),
-});
 
 module.exports = {
     env: "development",
-    port: 2000,
+    port: 1000,
     mongo: {
-      uri: "mongodb://localhost:27017/FixMyCityT",
+      uri: "mongodb://mongo:27017/FixMyCity",
     },
-    logs: process.env.NODE_ENV === 'production' ? 'combined' : 'dev',
+    logs: 'production' ? 'combined' : 'dev',
     jwt_key: 'sampleRandomKey',
     session_key : "randomsession"
     

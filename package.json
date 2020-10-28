@@ -12,7 +12,6 @@
     "chai": "^4.2.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
-    "dotenv-safe": "^8.2.0",
     "email-check": "^1.1.0",
     "email-validator": "^2.0.4",
     "express": "~4.16.1",
@@ -29,8 +28,7 @@
     "morgan": "~1.9.1",
     "multer": "^1.4.2",
     "nodemailer": "^6.4.12",
-    "swagger-ui-express": "^4.1.4",
-    "winston": "^3.3.3"
+    "swagger-ui-express": "^4.1.4"
   },
   "devDependencies": {
     "express-swagger-generator": "^1.1.17",
