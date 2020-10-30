@@ -1,4 +1,12 @@
 var mongoose=require('mongoose');
+const { admin } = require('../firebase-config')
+
+
+const notification_options = {
+    priority: "high",
+    timeToLive: 60 * 60 * 24
+  };
+
 
 const reportModel = require('../models/report.model');
 const municipalModel = require('../models/municipal.model')
@@ -11,10 +19,28 @@ exports.createReport = async (req,res)=>{
             name : req.body.name,
             description : req.body.description,
             photo_url :req.file.path,
-            reported_by : mongoose.Types.ObjectId(req.body.user_id),
+            reported_by : mongoose.Types.ObjectId(req.user.data._id),
             reported_to : mongoose.Types.ObjectId(municipal._id),
         })
+        var payload = {
+            notification: {
+              title: "New Report Comming",
+              body: `It's about the ${req.body.name}`
+            }
+          };
+
+
         await newReport.save()
+          //token from municipality
+        const  registrationToken = ['eEe2bqBpSAimG4_CA97Uck:APA91bHdaBB6AExfIdezIqLQ-t_hEgCDmcvTo-tpoey7MRd2_6-0Wr2i9iNe8wxeNSFcYZQxZO3BIw3CHuRF9pBwCuSeRiYR9KPdS8ku-xhTuw1E_L0M2U0KLGs6BsS4o1XZnGgZP7PL']
+        const options =  notification_options
+        admin.messaging().sendToDevice(registrationToken, payload, options)
+        .then( response => {
+            console.log("Notification sent successfully")
+        })
+        .catch( error => {
+            console.log(error);
+        });
         return res.status(200).send(newReport)
         
         
@@ -91,6 +117,8 @@ exports.viewMyReport = async (req,res)=>{
 
 exports.resolveReport = async (req,res)=>{
     try {
+
+    
         const municipal_id = req.user.data._id
         const report =  await reportModel.findOne({
             _id : req.params.id
@@ -113,7 +141,26 @@ exports.resolveReport = async (req,res)=>{
                 const option = {
                     sort :  { 'updated_at' : -1 }
                 }
-               return res.json(await reportModel.paginate({reported_to : mongoose.Types.ObjectId(municipal_id)},option))
+                var payload = {
+                    notification: {
+                      title: "Fixed Report",
+                      body: `The issue you reported about the ${report.name} has been fixed.`
+                    }
+                  };
+                const user = userModel.findById(report.reported_by)
+                //token from user
+                const  registrationToken = ['eEe2bqBpSAimG4_CA97Uck:APA91bHdaBB6AExfIdezIqLQ-t_hEgCDmcvTo-tpoey7MRd2_6-0Wr2i9iNe8wxeNSFcYZQxZO3BIw3CHuRF9pBwCuSeRiYR9KPdS8ku-xhTuw1E_L0M2U0KLGs6BsS4o1XZnGgZP7PL']
+                const options =  notification_options
+                admin.messaging().sendToDevice(registrationToken, payload, options)
+                .then( response => {
+                    console.log("Notification sent successfully")
+                })
+                .catch( error => {
+                    console.log(error);
+                });
+                 
+               return res.json(await reportModel.paginate({reported_to : mongoose.Types.ObjectId(municipal_id)},option)
+               )
             }
             throw new Error('You can\'t Resolve this Issue')
         }
@@ -131,7 +178,7 @@ exports.resolveReport = async (req,res)=>{
 exports.forMunicipal = async (req,res)=>{
 
     try {
-        const municipal_id = req.body.municipal_id
+        const municipal_id = req.user.data._id
 
         const reports =  await reportModel.find({
             reported_to : mongoose.Types.ObjectId(municipal_id)
@@ -167,7 +214,7 @@ exports.removeReport = async (req, res) => {
             })
         }
         res.status(200).json({
-            message: 'municreportipal doesn\t exist',
+            message: 'report doesn\t exist',
     
         })
 

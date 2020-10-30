@@ -2,6 +2,7 @@ var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
+const bodyparser = require('body-parser')
 var logger = require('morgan');
 var jwt = require('express-jwt');
 var session = require('express-session');
@@ -15,6 +16,7 @@ var authRouter = require('./routes/auth');
 var reportRouter = require('./routes/reports');
 var adminRouter = require('./routes/admin');
 var municipalityRouter = require('./routes/municipal');
+var notificationRouter = require('./routes/notification')
 
 var app = express();
 
@@ -55,7 +57,7 @@ expressSwagger(options)
 mongoose.connect();
 
 app.use(logger('dev'));
-app.use(express.json());
+app.use(bodyparser.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static('public/'));
@@ -75,6 +77,7 @@ app.use('/auth', authRouter);
 app.use('/reports', reportRouter);
 app.use('/admin', adminRouter);
 app.use('/municipality', municipalityRouter);
+app.use('/notification', notificationRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

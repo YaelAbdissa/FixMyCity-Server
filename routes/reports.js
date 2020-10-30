@@ -83,10 +83,11 @@ router.get('/myReport', checkHasPermission("view any issue"),reportController.vi
  */
 router.get('/', reportController.viewAllReport);
 
+
 /** 
  * Get Specific User
  * 
- * @route GET /reports
+ * @route GET /reports/{id}
  * @group Report 
  * @param {string} id.path.required - report id
  * @security JWT
@@ -107,6 +108,7 @@ router.get('/:id', reportController.viewReportById);
  * @returns {Error}  default - Unexpected error
  */
 router.put('/:id', isMunicipal, reportController.resolveReport);
+
 
 /**
  * Delete a Report  

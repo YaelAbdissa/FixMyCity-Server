@@ -10,7 +10,7 @@ const userSchema = new mongoose.Schema({
     email: { type: String, unique: true, trim: true, lowercase: true, required: true},
     password: { type: String, required: true, minlength: 8, maxlength: 128},
     active: { type: Boolean, default: true },
-    push_token: { type: String, default: '' },
+    firebase_reg_token: { type: String, default: '' },
     reset_link: { type: String, default: '' },
     isAdmin : {type : Boolean ,default :false},
     roles: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Roles' }],

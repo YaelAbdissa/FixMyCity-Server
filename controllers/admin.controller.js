@@ -11,13 +11,17 @@ exports.login = async (req, res, next) => {
         email: req.body.email
       })
       if(user && await user.verifyPassword(req.body.password)){
-        // const user = await userModel.findOne({
-        //   email: req.body.email
-        // }).select('-password')
+        const user = await userModel.findOne({
+          email: req.body.email
+        }).select('-password')
         const userfortoken = _.pick(user,['username','isAdmin','_id','email'])
         return res.json({
           ...user._doc,
-          token: jwt.sign({data: userfortoken}, jwt_key, { algorithm: 'HS256' })
+          token: jwt.sign(
+            {data: userfortoken}, 
+            jwt_key,
+            {expiresIn: '2h'},
+            { algorithm: 'HS256' })
        });
       }
       throw new Error("Email/password not found")  

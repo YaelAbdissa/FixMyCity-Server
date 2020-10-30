@@ -25,6 +25,7 @@ exports.login = async (req, res) => {
             email: req.body.email
         }).populate({ path: 'roles', populate: {path: 'permissions'} })
         if(user && await user.verifyPassword(req.body.password)){
+            
             req.session.user = user;
             let permissions =  user._doc.roles.reduce((prev, next) => {
                 return [...prev, ...next.permissions.map(permission => permission.name)]
@@ -33,9 +34,14 @@ exports.login = async (req, res) => {
 
             user._doc.roles = user._doc.roles.map(role => role.name)
             const userfortoken = _.pick(user,['username','first_name','last_name','roles','permissions','_id','email'])
+            const user1 = await userModel.findOne({
+                email: req.body.email
+              }).select('-password')
             return res.json({
-                ...user._doc,
-                token: jwt.sign({data: userfortoken}, jwt_key, { algorithm: 'HS256' })
+                ...user1._doc,
+                token: jwt.sign({data: userfortoken}, jwt_key,{
+                    expiresIn: '7d'
+                }, { algorithm: 'HS256' })
             });
             
         }
