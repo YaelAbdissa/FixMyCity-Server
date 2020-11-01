@@ -6,6 +6,7 @@ exports.routes = {
         '/auth/reset-password',
         '/admin/login',
         '/municipality/login',
-        '/auth/activate'
+        '/auth/activate',
+        '/reports'
     ]
 }

@@ -24,7 +24,11 @@ exports.login = async (req, res, next) => {
             { algorithm: 'HS256' })
        });
       }
-      throw new Error("Email/password not found")  
+      
+      return res.send({
+        message : "Email/password not found"
+      })  
+      
         
     } catch (error) {
         res.status(400).json({
