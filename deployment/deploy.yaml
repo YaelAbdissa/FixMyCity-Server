@@ -43,7 +43,7 @@ spec:
         imagePullPolicy: Always
         readinessProbe:
           httpGet:
-            path: /api-docs
+            path: /
             port: 1000
         ports:
         - name: fixmycity-port
