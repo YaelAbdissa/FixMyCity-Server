@@ -26,11 +26,9 @@ spec:
                 name: mongo-secret
                 key: MONGODB_URL
           - name: NODE_ENV
-            value: "test"
+            value: test
           - name: PORT
             value: "1000"
-          - name: clinet_url
-            value: "fixmycity-api.apps.et6om.gebeya.co"
         resources:
           limits:
             memory: "500Mi"
