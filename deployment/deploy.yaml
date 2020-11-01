@@ -36,7 +36,7 @@ spec:
         imagePullPolicy: Always
         readinessProbe:
           httpGet:
-            path: /
+            path: /reportsForMe
             port: 1000
         ports:
         - name: fixmycity-port
