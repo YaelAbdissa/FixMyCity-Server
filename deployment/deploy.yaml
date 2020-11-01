@@ -25,8 +25,15 @@ spec:
               secretKeyRef:
                 name: mongo-secret
                 key: MONGODB_URL
+          - name: MONGO_URI
+            valueFrom:
+              secretKeyRef:
+                name: mongo-secret
+                key: MONGODB_URL
           - name: NODE_ENV
-            value: test
+            value: test                
+          - name: clinet_url
+            value: http://fixmycity-api.apps.et6om.gebeya.co
           - name: PORT
             value: "1000"
         resources:
