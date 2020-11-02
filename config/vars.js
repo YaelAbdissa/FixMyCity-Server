@@ -10,7 +10,7 @@ module.exports = {
     env: "development",
     port: 2000,
     mongo: {
-      uri: "mongodb://localhost:27017/FixMyCityT",
+      uri: "mongodb://mongo:27017/FixMyCityT",
     },
     logs: process.env.NODE_ENV === 'production' ? 'combined' : 'dev',
     jwt_key: 'sampleRandomKey',
