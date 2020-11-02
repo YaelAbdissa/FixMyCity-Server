@@ -4,9 +4,9 @@ const path = require('path');
 //mongodb://localhost:27017/FixMyCity
 module.exports = {
     env: "development",
-    port: 1000,
+    port: env.process.PORT,
     mongo: {
-      uri: "mongodb://mongo:27017/FixMyCityT",
+      uri: env.process.MONGO_URI_TESTS,
     },
     logs: 'production' ? 'combined' : 'dev',
     jwt_key: 'sampleRandomKey',
