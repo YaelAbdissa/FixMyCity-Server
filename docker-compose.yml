@@ -1,16 +1,16 @@
 version: "3"
 services:
   app:
-    container_name: fixmycity-s
+    container_name: fixmycity-api
     restart: always
     build: .
     ports:
       - 1000:1000
     volumes: 
-      - .:/usr/src/app
-      - /usr/src/app/node_modules
+      - .:/user
+      - /user/node_modules
     links:
-      - mongo
+        - mongo
   mongo:
     container_name: mongo
     image: mongo

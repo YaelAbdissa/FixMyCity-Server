@@ -36,7 +36,7 @@ exports.updateUser = async (req, res) => {
         let user =  await userModel.find({_id:req.user.data._id})
         if(user) {
             user = await userModel.updateOne({_id: req.user.data._id}, req.body)
-            return res.json(user)
+            return res.json({message :"successfully updated"})
         }
 
         throw new Error('User dosen\'t exist')

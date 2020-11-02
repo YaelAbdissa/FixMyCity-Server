@@ -10,27 +10,21 @@ const reportSchema = new mongoose.Schema({
     isResolved: { type: Boolean, default: false},
     reported_by: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
     reported_to: { type: mongoose.Schema.Types.ObjectId, ref: 'Municipal' },
+
     location: {
         type: {
-            type: String, 
-            enum: ['Point'],
-            //required: true
+          type: String, 
+          enum: "Point", default: "Point",
         },
         coordinates: {
-            type: [Number],
-            ///required: true
-            index : '2dsphere'
-        }
+          type: [Number],
+          required: true
+        }, 
+      },
+    created_at: {
+        type : Date,
+        default : Date.now
     }
-    },
-    {
-        toObject: { getters: true },
-        timestamps: {
-            createdAt: 'created_at', 
-            updatedAt: 'updated_at'
-    },
-    
-
 })
 
 reportSchema.plugin(mongoosePaginate);

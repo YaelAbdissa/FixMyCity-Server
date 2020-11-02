@@ -4,6 +4,7 @@ var router = express.Router();
 
 const userController = require('../controllers/user.controller')
 const { checkHasPermission } = require('../midddlewares/permission');
+const isAdmin = require('../midddlewares/admin')
 
 /**
  * Get All users
@@ -26,7 +27,7 @@ router.get('/', userController.viewAllUsers);
  * @returns {object} 200 - User object
  * @returns {Error}  default - Unexpected error
  */
-router.get('/myProfile', userController.viewUserProfile);
+router.get('/myProfile',checkHasPermission(['view user']), userController.viewUserProfile);
 
 
 /**
@@ -39,7 +40,7 @@ router.get('/myProfile', userController.viewUserProfile);
  * @returns {object} 200 - A User object
  * @returns {Error}  default - Unexpected error
  */
-router.get('/:id',checkHasPermission(['view user']), userController.viewUser);
+router.get('/:id', userController.viewUser);
 
 /**
  * Update a user 
@@ -66,7 +67,7 @@ router.patch('/', userController.updateUser);
  * @returns {object} 200 - will return a string that says successfully deleted
  * @returns {Error}  default - Unexpected error
  */
-router.delete('/:id', userController.removeUser);
+router.delete('/:id',isAdmin, userController.removeUser);
 
 
 

@@ -1,4 +1,5 @@
 var jwt = require('jsonwebtoken');
+var _ = require('lodash');
 
 const municipalityModel = require('../models/municipal.model')
 const roleModel = require('../models/role.model')
@@ -61,17 +62,12 @@ exports.login = async (req,res)=>{
      const {username ,password} = req.body
         const municipal = await municipalityModel.findOne({
             username : username
-        }).populate({ path: 'roles', populate: {path: 'permissions'} })
+        })
         if(municipal && municipal.verifyPassword(password)){
-            console.log(municipal._doc.roles)
-            let permissions =  municipal._doc.roles.reduce((prev, next) => {
-                return [...prev, ...next.permissions.map(permission => permission.name)]
-            },[])
-            municipal._doc.permissions = Array.from(new Set([...municipal._doc.permissions.map(v => v.name), ...permissions ]))
-            municipal._doc.roles = municipal._doc.roles.map(role => role.name)
+            const municipalfortoken = _.pick(municipal,['username','name','isMunicipal','_id'])
             return res.json({
                 ...municipal._doc,
-                token: jwt.sign({data: municipal._doc}, jwt_key, { algorithm: 'HS256' })
+                token: jwt.sign({data: municipalfortoken}, jwt_key, { algorithm: 'HS256' })
             });
         }
         throw new Error("Email/password not found")

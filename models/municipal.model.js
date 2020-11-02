@@ -7,6 +7,7 @@ const municipalSchema = new mongoose.Schema({
     username: { type: String, default: '' },
     name: { type: String, default: '' },
     password: { type: String, required: true, minlength: 8, maxlength: 128},
+    firebase_reg_token: { type: String, default: '' },
     isMunicipal : { type : Boolean, default:true},
 })
 

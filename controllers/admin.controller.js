@@ -1,5 +1,6 @@
 var mongoose=require('mongoose');
 var jwt = require('jsonwebtoken');
+var _ = require('lodash');
 
 const userModel = require('../models/user.model')
 const { jwt_key } = require('../config/vars')
@@ -13,12 +14,21 @@ exports.login = async (req, res, next) => {
         const user = await userModel.findOne({
           email: req.body.email
         }).select('-password')
+        const userfortoken = _.pick(user,['username','isAdmin','_id','email'])
         return res.json({
           ...user._doc,
-          token: jwt.sign({data: user._doc}, jwt_key, { algorithm: 'HS256' })
+          token: jwt.sign(
+            {data: userfortoken}, 
+            jwt_key,
+            {expiresIn: '2h'},
+            { algorithm: 'HS256' })
        });
       }
-      throw new Error("Email/password not found")  
+      
+      return res.send({
+        message : "Email/password not found"
+      })  
+      
         
     } catch (error) {
         res.status(400).json({
@@ -39,6 +49,7 @@ exports.changePassword = async (req, res, next) => {
         email : user.email,
         password :newPass,
         roles :user.roles
+   
       }
       await reportModel.updateOne({_id:user._id}, newUser);
       return res.json({user})

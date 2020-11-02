@@ -1,7 +1,8 @@
-require('dotenv').config();
+
+var _ = require('lodash');
 var jwt = require('jsonwebtoken');
 const nodeMailer = require("nodemailer");
-var emailCheck = require('email-check');
+
 
 const { jwt_key } = require('../config/vars')
 const userModel = require('../models/user.model')
@@ -24,6 +25,7 @@ exports.login = async (req, res) => {
             email: req.body.email
         }).populate({ path: 'roles', populate: {path: 'permissions'} })
         if(user && await user.verifyPassword(req.body.password)){
+            
             req.session.user = user;
             let permissions =  user._doc.roles.reduce((prev, next) => {
                 return [...prev, ...next.permissions.map(permission => permission.name)]
@@ -31,9 +33,15 @@ exports.login = async (req, res) => {
             user._doc.permissions = Array.from(new Set([...user._doc.permissions.map(v => v.name), ...permissions ]))
 
             user._doc.roles = user._doc.roles.map(role => role.name)
+            const userfortoken = _.pick(user,['username','first_name','last_name','roles','permissions','_id','email'])
+            const user1 = await userModel.findOne({
+                email: req.body.email
+              }).select('-password')
             return res.json({
-                ...user._doc,
-                token: jwt.sign({data: user._doc}, jwt_key, { algorithm: 'HS256' })
+                ...user1._doc,
+                token: jwt.sign({data: userfortoken}, jwt_key,{
+                    expiresIn: '7d'
+                }, { algorithm: 'HS256' })
             });
             
         }
@@ -53,8 +61,7 @@ exports.login = async (req, res) => {
 exports.signup = async (req, res) => {
 
     try {
-        // const isValid =await emailCheck(req.body.email)
-        // if(isValid){
+        
             const user = await userModel.findOne({
                 email: req.body.email
             })
@@ -76,10 +83,7 @@ exports.signup = async (req, res) => {
             res.status(200).json(
                 newUser
             )
-        // }
-        // else{
-        //     throw new Error("email does not exists")
-        // }
+        
     } catch (error) {
         
         res.status(400).json({
