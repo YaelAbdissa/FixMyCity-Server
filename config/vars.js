@@ -4,9 +4,9 @@ const path = require('path');
 //mongodb://localhost:27017/FixMyCity
 module.exports = {
     env: "development",
-    port: env.process.PORT,
+    port: process.env.PORT,
     mongo: {
-      uri: env.process.MONGO_URI_TESTS,
+      uri: process.env.MONGO_URI_TESTS,
     },
     logs: 'production' ? 'combined' : 'dev',
     jwt_key: 'sampleRandomKey',
