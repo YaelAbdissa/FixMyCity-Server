@@ -15,41 +15,40 @@ const userModel = require('../models/user.model')
 exports.createReport = async (req,res)=>{
     try{
         var municipal  = await municipalModel.findOne({name : req.body.municipal})
+        let location = [req.body.longitude, req.body.latitude]
         const newReport = await new reportModel({
             name : req.body.name,
             description : req.body.description,
             photo_url :req.file.path,
             reported_by : mongoose.Types.ObjectId(req.user.data._id),
             reported_to : mongoose.Types.ObjectId(municipal._id),
+            location : {
+                coordinates: location
+              }
         })
         var payload = {
             notification: {
               title: "New Report Comming",
-              body: `It's about the ${req.body.name}`
+              body: `It's about ${req.body.name}`
             }
           };
-
-
         await newReport.save()
-          //token from municipality
-        const  registrationToken = ['eEe2bqBpSAimG4_CA97Uck:APA91bHdaBB6AExfIdezIqLQ-t_hEgCDmcvTo-tpoey7MRd2_6-0Wr2i9iNe8wxeNSFcYZQxZO3BIw3CHuRF9pBwCuSeRiYR9KPdS8ku-xhTuw1E_L0M2U0KLGs6BsS4o1XZnGgZP7PL']
-        const options =  notification_options
-        admin.messaging().sendToDevice(registrationToken, payload, options)
-        .then( response => {
-            console.log("Notification sent successfully")
-        })
-        .catch( error => {
-            console.log(error);
-        });
+
+         const  registrationToken = [`${municipal.firebase_reg_token}`]
+         const options =  notification_options
+         admin.messaging().sendToDevice(registrationToken, payload, options)
+         .then( response => {
+             console.log("Notification sent successfully")
+         })
+         .catch( error => {
+             console.log(error);
+         });
         return res.status(200).send(newReport)
-        
-        
+
     } catch(err){
-        console.error(err)
         res.status(400).json({
             error: true,
             message: err.message,
-    
         })
     }
 }
@@ -114,11 +113,8 @@ exports.viewMyReport = async (req,res)=>{
     }
 }
 
-
 exports.resolveReport = async (req,res)=>{
     try {
-
-    
         const municipal_id = req.user.data._id
         const report =  await reportModel.findOne({
             _id : req.params.id
@@ -147,9 +143,8 @@ exports.resolveReport = async (req,res)=>{
                       body: `The issue you reported about the ${report.name} has been fixed.`
                     }
                   };
-                const user = userModel.findById(report.reported_by)
-                //token from user
-                const  registrationToken = ['eEe2bqBpSAimG4_CA97Uck:APA91bHdaBB6AExfIdezIqLQ-t_hEgCDmcvTo-tpoey7MRd2_6-0Wr2i9iNe8wxeNSFcYZQxZO3BIw3CHuRF9pBwCuSeRiYR9KPdS8ku-xhTuw1E_L0M2U0KLGs6BsS4o1XZnGgZP7PL']
+                const user = await userModel.findById(report.reported_by)
+                const  registrationToken = [`${user.firebase_reg_token}`]
                 const options =  notification_options
                 admin.messaging().sendToDevice(registrationToken, payload, options)
                 .then( response => {
@@ -158,13 +153,10 @@ exports.resolveReport = async (req,res)=>{
                 .catch( error => {
                     console.log(error);
                 });
-                 
-               return res.json(await reportModel.paginate({reported_to : mongoose.Types.ObjectId(municipal_id)},option)
-               )
+               return res.json(newReport)
             }
             throw new Error('You can\'t Resolve this Issue')
         }
-
         throw new Error('Report dosen\'t exist')
     } catch (error) {
         res.status(400).json({
@@ -172,22 +164,17 @@ exports.resolveReport = async (req,res)=>{
             message: error.message
         })
     }
-
 }
 
 exports.forMunicipal = async (req,res)=>{
-
     try {
         const municipal_id = req.user.data._id
-
         const reports =  await reportModel.find({
             reported_to : mongoose.Types.ObjectId(municipal_id)
         })
         if(reports.length != 0){
-
             return res.status(200).json(reports)
         }
-        
         return res.status(200).json({
             error: false,
             message: "No Data to retrieve"
@@ -198,8 +185,6 @@ exports.forMunicipal = async (req,res)=>{
             message: error.message
         })
     }
-    
-
 }
 
 exports.removeReport = async (req, res) => {

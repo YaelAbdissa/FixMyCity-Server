@@ -18,6 +18,8 @@ var authRouter = require('./routes/auth');
 var reportRouter = require('./routes/reports');
 var adminRouter = require('./routes/admin');
 var municipalityRouter = require('./routes/municipal');
+var tokenRouter = require('./routes/token');
+var rateRouter = require('./routes/rate');
 
 
 var app = express();
@@ -80,7 +82,8 @@ app.use('/auth', authRouter);
 app.use('/reports', reportRouter);
 app.use('/admin', adminRouter);
 app.use('/municipality', municipalityRouter);
-
+app.use('/firebase', tokenRouter)
+app.use('/rate', rateRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

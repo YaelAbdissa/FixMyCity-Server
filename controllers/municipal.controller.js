@@ -2,7 +2,6 @@ var jwt = require('jsonwebtoken');
 var _ = require('lodash');
 
 const municipalityModel = require('../models/municipal.model')
-const roleModel = require('../models/role.model')
 
 const { jwt_key } = require('../config/vars')
 exports.getAllMunicipality = async(req,res) =>{
@@ -34,14 +33,10 @@ exports.addMunicipal = async(req,res)=>{
         if(municipal){
             throw new Error("Muncipal already exists")
         }
-        const roles = await roleModel.findOne({
-            name: "municipal"
-        })
         const newMunicipal = new municipalityModel({
             name :req.body.name,
             password : req.body.password,
             username: req.body.username,
-            roles : roles._id,
 
         })
         await newMunicipal.save()
@@ -130,7 +125,7 @@ exports.viewMunicipalityProfile = async(req,res) =>{
 
         const municipal =  await municipalityModel.findById(req.user.data._id)
         if(municipal != null){
-            res.status(200).json(municipal)
+            return res.status(200).json(municipal)
         }
         res.status(200).json({
             message: "municipality not found"

@@ -78,7 +78,6 @@ exports.removeUser = async (req, res) => {
 
 exports.viewUserProfile = async(req,res) =>{
     try {
-
         const user =  await userModel.find({_id:req.user.data._id})
         if(user != null){
             return res.status(200).json(user)

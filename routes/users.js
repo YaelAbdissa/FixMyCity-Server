@@ -3,8 +3,10 @@ var express = require('express');
 var router = express.Router();
 
 const userController = require('../controllers/user.controller')
-const { checkHasPermission } = require('../midddlewares/permission');
+const adminController = require('../controllers/admin.controller')
+const isUser = require('../midddlewares/user')
 const isAdmin = require('../midddlewares/admin')
+const checkAuth = require('../midddlewares/check_auth');
 
 /**
  * Get All users
@@ -15,7 +17,7 @@ const isAdmin = require('../midddlewares/admin')
  * @returns {object} 200 - List of Users
  * @returns {Error}  default - Unexpected error
  */
-router.get('/', userController.viewAllUsers);
+router.get('/', isAdmin,userController.viewAllUsers);
 
 
 /**
@@ -27,7 +29,7 @@ router.get('/', userController.viewAllUsers);
  * @returns {object} 200 - User object
  * @returns {Error}  default - Unexpected error
  */
-router.get('/myProfile',checkHasPermission(['view user']), userController.viewUserProfile);
+router.get('/myProfile',isUser, userController.viewUserProfile);
 
 
 /**
@@ -40,7 +42,7 @@ router.get('/myProfile',checkHasPermission(['view user']), userController.viewUs
  * @returns {object} 200 - A User object
  * @returns {Error}  default - Unexpected error
  */
-router.get('/:id', userController.viewUser);
+router.get('/:id',checkAuth, userController.viewUser);
 
 /**
  * Update a user 
@@ -53,9 +55,9 @@ router.get('/:id', userController.viewUser);
  * @returns {object} 200 - returns the updated user object 
  * @returns {Error}  default - Unexpected error
  */
-router.patch('/', userController.updateUser);
+router.patch('/', checkAuth, userController.updateUser);
   
-
+router.patch('/changePassword', checkAuth, adminController.changePassword);
 
 /**
  * Remove a User  with id

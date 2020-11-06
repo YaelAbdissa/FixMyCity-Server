@@ -18,7 +18,7 @@ const reportSchema = new mongoose.Schema({
         },
         coordinates: {
           type: [Number],
-          required: true
+          //required: true
         }, 
       },
     created_at: {

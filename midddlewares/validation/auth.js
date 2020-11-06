@@ -7,7 +7,7 @@ exports.validatRequest = schemaName => async (req,res,next) => {
             Joi.object({
                 email : Joi.string().email().required(),
                 password: Joi.string().required()
-                    .pattern(new RegExp('^[a-zA-Z0-9]{5,30}$')),
+                    .pattern(new RegExp('^[a-zA-Z0-9]{5,30}$'))
             }),
         createUser: () => 
             Joi.object({

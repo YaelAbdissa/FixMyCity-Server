@@ -6,7 +6,6 @@ const nodeMailer = require("nodemailer");
 
 const { jwt_key } = require('../config/vars')
 const userModel = require('../models/user.model')
-const roleModel = require('../models/role.model')
 
 let transporter = nodeMailer.createTransport({
     service : 'gmail',
@@ -23,23 +22,14 @@ exports.login = async (req, res) => {
         
         const user = await userModel.findOne({
             email: req.body.email
-        }).populate({ path: 'roles', populate: {path: 'permissions'} })
+        })
         if(user && await user.verifyPassword(req.body.password)){
-            
-            req.session.user = user;
-            let permissions =  user._doc.roles.reduce((prev, next) => {
-                return [...prev, ...next.permissions.map(permission => permission.name)]
-            },[])
-            user._doc.permissions = Array.from(new Set([...user._doc.permissions.map(v => v.name), ...permissions ]))
-
-            user._doc.roles = user._doc.roles.map(role => role.name)
-            const userfortoken = _.pick(user,['username','first_name','last_name','roles','permissions','_id','email'])
             const user1 = await userModel.findOne({
                 email: req.body.email
               }).select('-password')
             return res.json({
                 ...user1._doc,
-                token: jwt.sign({data: userfortoken}, jwt_key,{
+                token: jwt.sign({data: user1}, jwt_key,{
                     expiresIn: '7d'
                 }, { algorithm: 'HS256' })
             });
@@ -68,15 +58,12 @@ exports.signup = async (req, res) => {
             if(user){
                 throw new Error("User already Exists")
             }
-            const roles = await roleModel.findOne({
-                name: "user"
-            })
             const newUser = await new userModel({
                 first_name : req.body.first_name,
                 last_name : req.body.last_name,
                 email : req.body.email,
                 password : req.body.password,
-                roles : roles._id,
+                isAdmin :false
             })
             
             await newUser.save()
@@ -92,46 +79,6 @@ exports.signup = async (req, res) => {
         })
     }
     
-}
-exports.activate = async (req, res)=>{
-    // try{
-    //     const token = req.body.token;
-    //     console.log(token)
-    //     if(!token){
-    //         throw new Error("Something went wrong")
-    //     }
-        
-    //     jwt.verify(token, jwt_key, { algorithm: 'HS256' }, async (err, decoded)=> {
-    //         if(err){
-    //             throw new Error("Incorrect or expired links")
-    //         }
-            //console.log(decoded.data)
-
-            // const roles = await roleModel.findOne({
-            //     name: "user"
-            // })
-            console.log(decoded)
-            // const newUser = await new userModel({
-            //     first_name : decoded.data.first_name,
-            //     last_name : decoded.data.last_name,
-            //     email : decoded.data.email,
-            //     password : decoded.data.password,
-            //     roles : roles._id,
-            // })
-            
-            // await newUser.save()
-            // res.status(200).json({
-            //     newUser
-            // })
-
-    //     });
-        
-    // }catch(err){
-    //     res.status(400).json({
-    //         error: true,
-    //         message: error.message
-    //     })
-    // }
 }
 
 exports.forgetPassword = async (req, res) => {
@@ -174,6 +121,8 @@ exports.forgetPassword = async (req, res) => {
     
 }
 
+
+
 exports.resetPassword = async (req, res) => {
     const {resetLink , newPass} = req.body
     try {
@@ -206,12 +155,11 @@ exports.resetPassword = async (req, res) => {
 exports.logout = async (req, res) => {
 
     try {
-        req.session.destroy((err)=>{
-            if(err){
-                throw new Error("Something went wrong")
-            }
-            res.send("your logged out")
-        });
+        let user =  await userModel.findById(req.user.data._id)
+        // console.log(user)
+        await user.updateOne({firebase_reg_token : ""});
+        res.send("your logged out")
+       
 
     } catch (error) {
         

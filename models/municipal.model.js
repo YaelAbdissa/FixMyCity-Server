@@ -9,6 +9,7 @@ const municipalSchema = new mongoose.Schema({
     password: { type: String, required: true, minlength: 8, maxlength: 128},
     firebase_reg_token: { type: String, default: '' },
     isMunicipal : { type : Boolean, default:true},
+    rate:[{ type: mongoose.Schema.Types.ObjectId, ref: 'Rates' }],
 })
 
 

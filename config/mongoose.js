@@ -37,9 +37,7 @@ exports.connect = () => {
       })
       .then(async () => {
         console.log('mongoDB connected...')
-        
-        await migration.migratePermissions();
-        await migration.migrateRoles();
+      
         await migration.migrateMunicipals();
         await migration.migrateUsers(); 
         

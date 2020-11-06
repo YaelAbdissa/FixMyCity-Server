@@ -3,10 +3,12 @@ const multer  = require('multer')
 
 const isAdmin = require('../midddlewares/admin')
 const isMunicipal = require('../midddlewares/municipal')
+const isUser = require('../midddlewares/user')
 
+const checkAuth = require('../midddlewares/check_auth');
 
+var router = express.Router();
 
-const { checkHasPermission } = require('../midddlewares/permission');
 const { validateReport } =require('../midddlewares/validation/report')
 
 const storage = multer.diskStorage({
@@ -20,7 +22,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage :storage })
 
-var router = express.Router();
+
 
 var reportController = require('../controllers/report.controller')
 
@@ -44,7 +46,8 @@ var reportController = require('../controllers/report.controller')
  * @returns {object} 200 - Report object
  * @returns {Error}  default - Unexpected error
  */
-router.post('/',upload.single('image'), checkHasPermission("create issue"),reportController.createReport); 
+router.post('/',upload.single('image'), isUser ,reportController.createReport); 
+
 
 /**
  * Get list of Reports for municipality
@@ -69,7 +72,7 @@ router.get('/reportsForMe', isMunicipal,reportController.forMunicipal)
  * @returns {object} 200 - Array of Reports
  * @returns {Error}  default - Unexpected error
  */
-router.get('/myReport', checkHasPermission("view any issue"),reportController.viewMyReport);
+router.get('/myReport', isUser,reportController.viewMyReport);
 
 
 /**
@@ -93,7 +96,7 @@ router.get('/', reportController.viewAllReport);
  * @returns {object} 200 - Array of Reports
  * @returns {Error}  default - Unexpected error
  */
-router.get('/:id', reportController.viewReportById);
+router.get('/:id', checkAuth,reportController.viewReportById);
 
 
 /**

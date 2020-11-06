@@ -1,47 +1,9 @@
-const permissions = [
-    'create user',
-    'view any user',
-    'view user',
-    'update user',
-    'remove user',
-
-    'create issue',
-    'view any issue',
-    'view issue',
-    'update issue',
-    'remove issue',
-
-    'create municipal',
-    'view any municipal',
-    'view municipal',
-    'update municipal',
-    'remove municipal',
-]
-
-const roles = {
-    admin: [...permissions],
-    municipal: [
-        'view issue',
-        'update issue',
-        'view any issue'
-    ],
-    user: [
-        'view user',
-        'update user',
-        'create issue',
-        'view any issue',
-        'view issue',
-        'update issue'
-    ],
-    
-}
 
 const users = [
     {
         username: 'admin',
         email: 'super@admin.com',
-        password: 'superuser',
-        roles: ['admin']
+        password: 'superuser'
     }
 ]
 
@@ -99,5 +61,5 @@ const municipals = [
     }
 ]
 
-module.exports = { permissions, roles, users, municipals }
+module.exports = { users, municipals }
 

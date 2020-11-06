@@ -72,15 +72,6 @@ router.post('/forget-password',validatRequest('forgetPassword'), authController.
  */
 router.put('/reset-password',  authController.resetPassword);
 
-/*
- * Forgot Password
- * 
- * @route POST /auth/activate
- * @group Auth
- * @param {string} token.path.required
- * @returns message says logout
- * @returns {Error}  default - Something went Wrong
- 
-router.post('/activate/:token', authController.activate);*/
+
 
 module.exports = router;

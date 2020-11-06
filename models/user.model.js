@@ -12,9 +12,7 @@ const userSchema = new mongoose.Schema({
     active: { type: Boolean, default: true },
     firebase_reg_token: { type: String, default: '' },
     reset_link: { type: String, default: '' },
-    isAdmin : {type : Boolean ,default :false},
-    roles: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Roles' }],
-    permissions: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Permissions' }],
+    isAdmin : {type : Boolean ,default :true},
   },
   {timestamps: {createdAt: 'created_at', modifiedAt: 'modified_at'}
 })

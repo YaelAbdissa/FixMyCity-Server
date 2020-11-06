@@ -14,11 +14,10 @@ exports.login = async (req, res, next) => {
         const user = await userModel.findOne({
           email: req.body.email
         }).select('-password')
-        const userfortoken = _.pick(user,['username','isAdmin','_id','email'])
         return res.json({
           ...user._doc,
           token: jwt.sign(
-            {data: userfortoken}, 
+            {data: user}, 
             jwt_key,
             {expiresIn: '2h'},
             { algorithm: 'HS256' })
@@ -40,19 +39,13 @@ exports.login = async (req, res, next) => {
 
 exports.changePassword = async (req, res, next) => {
   try {
-    const oldPass = req.body.password
-    const newPass = req.body.newPassword
-    let user = await userModel.findById(mongoose.Types.ObjectId(req.body.id))
-    if(oldPass == user.password ){
-      const newUser = {
-        username : user.username,
-        email : user.email,
-        password :newPass,
-        roles :user.roles
-   
-      }
-      await reportModel.updateOne({_id:user._id}, newUser);
-      return res.json({user})
+    const oldPass = req.body.oldPass
+    const newPass = req.body.newPass
+    let user = await userModel.findById(req.user.data._id)
+    if(user.verifyPassword(oldPass) ){
+      user.password = newPass
+      await user.save()
+      return res.status(200).json(user)
     }
     throw new Error('Incorrec\'t password')
   } catch (error) {

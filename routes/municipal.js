@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+
 const isAdmin = require('../midddlewares/admin')
 const isMunicipal = require('../midddlewares/municipal')
 
