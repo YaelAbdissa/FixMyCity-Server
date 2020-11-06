@@ -6,7 +6,7 @@ module.exports = {
     env: "development",
     port: process.env.PORT,
     mongo: {
-      uri: process.env.MONGO_URI_TESTS,
+      uri: process.env.MONGO_URI,
     },
     logs: 'production' ? 'combined' : 'dev',
     jwt_key: 'sampleRandomKey',
