@@ -46,7 +46,7 @@ var reportController = require('../controllers/report.controller')
  * @returns {object} 200 - Report object
  * @returns {Error}  default - Unexpected error
  */
-router.post('/',upload.single('image'), isUser ,reportController.createReport); 
+router.post('/',checkAuth,isUser,upload.single('image') ,reportController.createReport); 
 
 
 /**
