@@ -1,27 +1,41 @@
 var assert = require('assert');
-const { request } = require('http');
-const expect = require('chai').expect
-const app = require('../app')
+var expect = require('chai').expect
+var app = require('../app')
+var  request  = require('supertest')(app);
 
 var numb = 1
 
-describe('Variable', function () {
-  describe('#equal', function () {
-    it('should return true when the value is equal', function () {
-      assert.strictEqual(numb,1);
-    });
-    it('should return false when the value is not equal', function () {
-        assert.notStrictEqual(numb,2);
-      });
-  }),
-  describe('Test Route and Controller', function () {
-    it('If we send login with empty body should resturn bad request', function () {
-      return request(app)
-      .post('/auth/login')
-      .expect(200)
-      .end(function (err,res) {
-        if(err)throw err
-      })
+
+
+describe('Test Login Route', function () {
+    it('If we send login with empty body should return bad request', function () {
+      return request.post('/auth/login')
+       .send({})
+      .expect(400)
     })
+  
+    it('If we send with invalid email/password it should return 401 ', function () {
+      return request.post('/auth/login')
+      .send({
+        "email" : "test@gmail.com",
+        "password" : "test-password"
+      })
+     .expect(400)
+   })
+  
+   it('If we send with valid email/password it should return 200', function () {
+    return request.post('/auth/login')
+    .send({
+      "email" : "eyaelabdissa24@gmail.com",
+      "password" : "password"
+    })
+   .expect(200)
   })
-});
+})
+
+describe('Test  reports route', function(){
+    it('return reports', function(){
+      return request.get('/reports')
+      .expect(200)
+    })
+})

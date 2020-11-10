@@ -199,7 +199,7 @@ exports.removeReport = async (req, res) => {
             })
         }
         res.status(200).json({
-            message: 'report doesn\t exist',
+            message: 'report doesn\'t exist',
     
         })
 
